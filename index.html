@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <title>ToDoIt</title>
+
+    <!-- This is a 3rd-party stylesheet for Font Awesome: http://fontawesome.io/ -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" media="screen">
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
+  </head>
+  <body>
+
+    <header>
+
+      <!-- The <i> tag below includes the sticky note icon from Font Awesome -->
+      <h1><a href="/"><i class="fa fa-sticky-note-o"></i> ToDoIt</a></h1>
+
+      <nav>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href="/">Home</a></li>
+          <li class="navbar-item"><a href="/about">About</a></li>
+          <li class="navbar-item navbar-right"><a href="#">Log out</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section class="todo">
+        <h2>buy groceries</h2>
+        <div class="todo-body">
+          <ul class="todo-list">
+            <li>milk</li>
+            <li>tea</li>
+            <li>flour</li>
+            <li>bananas</li>
+          </ul>
+        </div>
+        <div class="dismiss-button">&times;</div>
+      </section>
+
+      <section class="todo">
+        <h2>grab a beer with Chris</h2>
+        <div class="todo-body">
+          <p class="indent-wrapped"><span class="where">where: </span>Squirrels</p>
+          <p class="indent-wrapped"><span class="when">when: </span>Thursday 9/29, 4:00</p>
+        </div>
+        <div class="dismiss-button">&times;</div>
+      </section>
+
+      <section class="todo">
+        <h2>take out the trash</h2>
+        <div class="todo-body">
+          <p class="indent-wrapped"><span class="when">when: </span>Monday Night</p>
+        </div>
+        <div class="dismiss-button">&times;</div>
+      </section>
+
+      <section class="todo">
+        <h2>call the bank re: loan</h2>
+        <div class="todo-body">
+          <p class="indent-wrapped"><span class="who">who: </span>Betty</p>
+          <p>541-757-1111</p>
+        </div>
+        <div class="dismiss-button">&times;</div>
+      </section>
+
+      <section class="todo">
+        <h2>paint the bedroom</h2>
+        <div class="todo-body">
+          <p>probably need 2 gallons (polar-bear-in-a-blizzard white)</p>
+        </div>
+        <div class="dismiss-button">&times;</div>
+      </section>
+
+      <div class="add-note-button-container">
+        <button id="add-note-button">+</button>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="copyright">
+        Copyright &copy; 2016
+      </div>
+    </footer>
+
+    <div id="modal-backdrop" class="hidden"></div>
+    <div id="add-note-modal" class="hidden">
+      <div class="modal-dialog">
+
+        <div class="modal-header">
+          <h3>Add a ToDo</h3>
+          <button type="button" class="modal-close-button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+          <div class="todo-input-element required">
+            <label for="todo-input-what">What</label>
+            <input type="text" id="todo-input-what">
+          </div>
+          <div class="todo-input-element">
+            <label for="todo-input-where">Where</label>
+            <input type="text" id="todo-input-where">
+          </div>
+          <div class="todo-input-element">
+            <label for="todo-input-when">When</label>
+            <input type="text" id="todo-input-when">
+          </div>
+          <div class="todo-input-element">
+            <label for="todo-input-who">Who</label>
+            <input type="text" id="todo-input-who">
+          </div>
+          <div class="todo-input-element">
+            <label for="todo-input-details">Details</label>
+            <textarea id="todo-input-details"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="modal-cancel-button">Cancel</button>
+          <button type="button" class="modal-accept-button">Add ToDo</button>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+
+  <script src="index.js"></script>
+
+</html>
