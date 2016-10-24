@@ -117,6 +117,7 @@ function createSticky(){
     addDetails(newBody, bolded, newWhere, detailsInput, section);
   }
 
+  //adding the dismiss button to each sticky
   var temp = document.createElement("div");
   temp.innerHTML = "&times;";
   temp.classList.add("dismiss-button");
