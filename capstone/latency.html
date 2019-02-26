@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" src="./js/latency.js"></script>
+  <title>Test Select</title>
+</head>
+
+  <body>
+    <a href='index.html' id='home'>Home</a>
+    <p>Welcome to the latency test. This test works by computing the difference between the eye-trackers calculations and the real time.</p>
+    <ol>
+      <li>Start by focusing on the box</li>
+      <li>Whenever you are ready to perform the test, click on the start button</li>
+      <li>The box will move a total of three times for the test</li>
+      <li>Track the box's movement with your eyes</li>
+    </ol>
+
+    <button id='start'>Start test</button>
+    <button id='reset'>Reset test</button>
+
+    <div id='edge'>
+      <div id='test-box'>
+      </div>
+    </div>
+
+  </body>
+</html>
